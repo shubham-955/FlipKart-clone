@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <!-- style sheet for css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- navbar section -->
+    <nav class="navbar navbar-expand-lg navbar-dark p-1" style="background-color:#2874f0;">
+        <div class="container-fluid">
+            <!-- navbar logo -->
+            <figure class="logo">
+                <a class="navbar-brand" href="#">
+                    <img src="images\flipkart-plus_8d85f4.png" alt="" srcset="">
+                    <figcaption class="caption"><i>Explore <span>Plus +</span></i></figcaption>
+                </a>
+            </figure>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- for search bar -->
+                <form class="d-flex">
+                    <input class="form-control me-2 main-search" type="search"
+                        placeholder="Search for products,brands and more" aria-label="Search">
+                    <!-- for search icon -->
+                    <svg width="20" height="20" viewBox="0 0 17 18" class="s-icon" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="#2874F1" fill-rule="evenodd">
+                            <path class="_34RNph"
+                                d="m11.618 9.897l4.225 4.212c.092.092.101.232.02.313l-1.465 1.46c-.081.081-.221.072-.314-.02l-4.216-4.203">
+                            </path>
+                            <path class="_34RNph"
+                                d="m6.486 10.901c-2.42 0-4.381-1.956-4.381-4.368 0-2.413 1.961-4.369 4.381-4.369 2.42 0 4.381 1.956 4.381 4.369 0 2.413-1.961 4.368-4.381 4.368m0-10.835c-3.582 0-6.486 2.895-6.486 6.467 0 3.572 2.904 6.467 6.486 6.467 3.582 0 6.486-2.895 6.486-6.467 0-3.572-2.904-6.467-6.486-6.467">
+                            </path>
+                        </g>
+                    </svg>
+
+                </form>
+
+                <!-- login button -->
+                <button type="button" class="btn btn-light btn-1" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Login</button>
+
+                <!-- popup section -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Sing in</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body ">
+                                <form>
+
+                                    <form>
+
+                                        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+                                        <div class="form-floating mb-3">
+                                            <input type="email" class="form-control" id="floatingInput"
+                                                placeholder="name@example.com">
+                                            <label for="floatingInput">Email address</label>
+                                        </div>
+                                        <div class="form-floating">
+                                            <input type="password" class="form-control" id="floatingPassword"
+                                                placeholder="Password">
+                                            <label for="floatingPassword">Password</label>
+                                        </div>
+
+                                        <div class="checkbox mb-3">
+                                            <label>
+                                                <input type="checkbox" value="remember-me"> Remember me
+                                            </label>
+                                        </div>
+                                        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+                                        <p class="mt-5 mb-3 text-muted">© 2017–2021</p>
+                                    </form>
+
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- more btn -->
+                <ul class="navbar-nav  mb-0 mb-lg-0">
+                    <li class="nav-item dropdown ms-4">
+                        <a class="nav-link dropdown-toggle" style="font-weight: 500; color: #ffffff;" href="#"
+                            id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <!-- notifications -->
+                            <li>
+                                <a class="dropdown-item" href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="14" class="" viewBox="0 0 12 14">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M-4-3h20v20H-4z"></path>
+                                            <path fill="#2874F1"
+                                                d="M6.17 13.61c-1.183 0-1.922-.723-1.922-1.88H8.09c0 1.157-.74 1.88-1.92 1.88zm4.222-5.028l1.465 1.104v1.07H0v-1.07l1.464-1.104v-2.31h.004c.035-2.54 1.33-4.248 3.447-4.652V.992C4.915.446 5.37 0 5.928 0c.558 0 1.014.446 1.014.992v.628c2.118.404 3.412 2.112 3.446 4.65h.004v2.312z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    Notification Preference</a>
+                            </li>
+                            <hr class="dropdown-divider" style="color: rgb(182, 180, 180);">
+
+                            <!-- Sell on flipkart -->
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" class=""
+                                        viewBox="0 0 16 14">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path
+                                                d="M-2-3h20v20H-2V-3zm8.333 4.167h3.334v1.666H6.333V1.167zm0 0h3.334v1.666H6.333V1.167z">
+                                            </path>
+                                            <path fill="#2874F0" fill-rule="nonzero"
+                                                d="M6.467 10.067V9.3h-5.36L1.1 12.367c0 .85.682 1.533 1.533 1.533h10.734c.85 0 1.533-.682 1.533-1.533V9.3H9.533v.767H6.467zm7.666-6.9H11.06V1.633L9.526.1H6.459L4.926 1.633v1.534h-3.06c-.843 0-1.533.69-1.533 1.533V7c0 .851.683 1.533 1.534 1.533h4.6V7h3.066v1.533h4.6c.844 0 1.534-.69 1.534-1.533V4.7c0-.843-.69-1.533-1.534-1.533zm-4.6 0H6.467V1.633h3.066v1.534z">
+                                            </path>
+                                        </g>
+                                    </svg>
+
+                                    Sell on flipkart</a>
+                            </li>
+                            <hr class="dropdown-divider" style="color: rgb(182, 180, 180);">
+
+                            <!-- 24x7 cc -->
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class=""
+                                        viewBox="0 0 14 17">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path fill="#2874F0" fill-rule="nonzero"
+                                                d="M12.25.542H1.75c-.833 0-1.5.675-1.5 1.5v10.5c0 .825.667 1.5 1.5 1.5h3L7 16.292l2.25-2.25h3c.825 0 1.5-.675 1.5-1.5v-10.5c0-.825-.675-1.5-1.5-1.5zm-4.5 12h-1.5v-1.5h1.5v1.5zM9.303 6.73l-.676.69c-.54.547-.877.997-.877 2.122h-1.5v-.375c0-.825.338-1.575.877-2.123l.93-.945c.278-.27.443-.646.443-1.058 0-.825-.675-1.5-1.5-1.5s-1.5.675-1.5 1.5H4c0-1.658 1.342-3 3-3s3 1.342 3 3c0 .66-.27 1.26-.697 1.687z">
+                                            </path>
+                                        </g>
+                                    </svg>
+
+                                    24x7 Customer Care</a>
+                            </li>
+                            <hr class="dropdown-divider" style="color: rgb(182, 180, 180);">
+
+                            <!-- Adviser -->
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class=""
+                                        viewBox="0 0 14 17">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path fill="#2874F0" fill-rule="nonzero"
+                                                d="M12.25.542H1.75c-.833 0-1.5.675-1.5 1.5v10.5c0 .825.667 1.5 1.5 1.5h3L7 16.292l2.25-2.25h3c.825 0 1.5-.675 1.5-1.5v-10.5c0-.825-.675-1.5-1.5-1.5zm-4.5 12h-1.5v-1.5h1.5v1.5zM9.303 6.73l-.676.69c-.54.547-.877.997-.877 2.122h-1.5v-.375c0-.825.338-1.575.877-2.123l.93-.945c.278-.27.443-.646.443-1.058 0-.825-.675-1.5-1.5-1.5s-1.5.675-1.5 1.5H4c0-1.658 1.342-3 3-3s3 1.342 3 3c0 .66-.27 1.26-.697 1.687z">
+                                            </path>
+                                        </g>
+                                    </svg>
+
+                                    Adervtise</a>
+                            </li>
+                            <hr class="dropdown-divider" style="color: rgb(182, 180, 180);">
+
+                            <!-- Download app -->
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" class=""
+                                        viewBox="0 0 12 14">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M-4-3h20v20H-4z"></path>
+                                            <path fill="#2874F0" fill-rule="nonzero"
+                                                d="M12 4.94H8.57V0H3.43v4.94H0l6 5.766 6-5.765zM0 12.354V14h12v-1.647H0z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    Download App</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- cart btn -->
+                    <li class="nav-item ms-4">
+                        <a class="nav-link active" aria-current="page" href="#"><svg class="V3C5bO" width="16"
+                                height="18d" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                <path class="_1bS9ic"
+                                    d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86"
+                                    fill="#fff"></path>
+                            </svg>
+                            <span class="cart">Cart</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar's after section -->
+
+    <section>
+        <div class="first-container" style="background-color: #fff;">
+            <div class="content">
+                <div class="box1">
+                    <a href="#">
+                        <img src="images\fist-section\offers.png" alt="">
+                        <h5>Top Offers</h5>
+                    </a>
+                </div>
+
+                <div class="box1">
+                    <a href="#">
+                        <img src="images\fist-section\surfexel.png" alt="">
+                        <h5>Grocery</h5>
+                    </a>
+                </div>
+
+                <div class="box1">
+                    <img src="images\fist-section\mobile.png" alt="">
+                    <h5>Mobiles</h5>
+                </div>
+
+                <!-- fashion -->
+                <div class="box1" id="dropdown">
+                    <img src="images\fist-section\clothes.png" alt="">
+                    <div class="btn-group">
+                        <button class="btn dropdown-toggle btn-active" type="button" id="defaultDropdown"
+                            data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                            <span>Fashion</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="defaultDropdown">
+                            <li><a class="dropdown-item" href="#">Men's Top Wear</a></li>
+                            <li><a class="dropdown-item" href="#">Men's Bottom Wear</a></li>
+                            <li><a class="dropdown-item" href="#">Women Ethinic</a></li>
+                            <li><a class="dropdown-item" href="#">Women Western</a></li>
+                            <li><a class="dropdown-item" href="#">Men Footerwear</a></li>
+                            <li><a class="dropdown-item" href="#">Women Footerwear</a></li>
+                            <li><a class="dropdown-item" href="#">Watches and Accessories</a></li>
+                            <li><a class="dropdown-item" href="#">Bags,Suitcases & luggage</a></li>
+                            <li><a class="dropdown-item" href="#">kids</a></li>
+                            <li><a class="dropdown-item" href="#">Essentials</a></li>
+                            <li><a class="dropdown-item" href="#">Winter</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- Electronics -->
+                <div class="box1" id="dropdown">
+                    <img src="images\fist-section\laptops.png" alt="">
+                    <div class="btn-group">
+                        <button class="btn  dropdown-toggle" type="button" id="defaultDropdown"
+                            data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                            <span>Electronics</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="defaultDropdown">
+                            <li><a class="dropdown-item" href="#">Audio</a></li>
+                            <li><a class="dropdown-item" href="#">Cameras & Accessories</a></li>
+                            <li><a class="dropdown-item" href="#">Computer Peripherals</a></li>
+                            <li><a class="dropdown-item" href="#">Gaming</a></li>
+                            <li><a class="dropdown-item" href="#">Health & Personal Care</a></li>
+                            <li><a class="dropdown-item" href="#">Laptop Accessories</a></li>
+                            <li><a class="dropdown-item" href="#">Laptop & Desktop</a></li>
+                            <li><a class="dropdown-item" href="#">Mobile Accessories</a></li>
+                            <li><a class="dropdown-item" href="#">Powerbank</a></li>
+                            <li><a class="dropdown-item" href="#">Smart Home automation</a></li>
+                            <li><a class="dropdown-item" href="#">Smart Wearables</a></li>
+                            <li><a class="dropdown-item" href="#">Strong</a></li>
+                            <li><a class="dropdown-item" href="#">Tablets</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- home -->
+                <div class="box1" id="dropdown">
+                    <img src="images\fist-section\home.png" alt="">
+                    <div class="btn-group">
+                        <button class="btn  dropdown-toggle" type="button" id="defaultDropdown"
+                            data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                            <span>Home</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="defaultDropdown">
+                            <li><a class="dropdown-item" href="#">Home Furnishing</a></li>
+                            <li><a class="dropdown-item" href="#">Living Room</a></li>
+                            <li><a class="dropdown-item" href="#">Kitchen & Dinning</a></li>
+                            <li><a class="dropdown-item" href="#">Bedroom room</a></li>
+                            <li><a class="dropdown-item" href="#">Home Decor</a></li>
+                            <li><a class="dropdown-item" href="#">Tools & Utility</a></li>
+                            <li><a class="dropdown-item" href="#">Lightnings & Electricals</a></li>
+                            <li><a class="dropdown-item" href="#">Space Saving</a></li>
+                            <li><a class="dropdown-item" href="#">Clearing & Bath</a></li>
+                            <li><a class="dropdown-item" href="#">Kids Furniture</a></li>
+                            <li><a class="dropdown-item" href="#">Pet & Gardering</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- appliance -->
+                <div class="box1" id="dropdown">
+                    <img src="images\fist-section\tv.png" alt="">
+                    <div class="btn-group">
+                        <button class="btn  dropdown-toggle" type="button" id="defaultDropdown"
+                            data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                            <span>Appliances</span>
+                        </button>
+                        <ul class="dropdown-menu menu" aria-labelledby="defaultDropdown">
+
+                            <li><a class="dropdown-item" href="#">Televisions</a></li>
+                            <li><a class="dropdown-item" href="#">Washing Machines</a></li>
+                            <li><a class="dropdown-item" href="#">Air Conditioners</a></li>
+                            <li><a class="dropdown-item" href="#">Refrigerators</a></li>
+                            <li><a class="dropdown-item" href="#">Kitchen Appliances</a></li>
+                            <li><a class="dropdown-item" href="#">Seasonal Appliances</a></li>
+                            <li><a class="dropdown-item" href="#">Premium Appliances</a></li>
+                            <li><a class="dropdown-item" href="#">Buying Guides</a></li>
+                            <li><a class="dropdown-item" href="#">Flipkart Benefits</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- travels -->
+                <div class="box1" style="margin-right: 0px;">
+                    <img src="images\fist-section\travel.png" alt="">
+                    <h5>Travels</h5>
+                </div>
+
+                <!-- beauty,toys and more-->
+                <div class="box1" id="dropdown">
+                    <img src="images\fist-section\toys.png" class="mx-auto" alt="">
+                    <div class="btn-group">
+                        <button class="btn  dropdown-toggle" type="button" id="defaultDropdown"
+                            data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                            <span>Beauty,Toys & More</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="defaultDropdown">
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr style="margin-top:1px; color: grey;">
+
+    <!-- main section  -->
+    <section class="main mx-2">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators  visually-hidden">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- 1 -->
+                <div class="carousel-item active" style="position: relative;">
+                    <img src="images\slideimg\sofaset.jpg" style="opacity: 0.7;" height="350px" width="100%"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block" style="position: absolute; bottom: 41px; left:0px;">
+                        <h5 style="font-size: 3rem; color: rgba(0, 0, 0, 0.979); font-weight: 700;">Give your home
+                            new look</h5>
+                        <p style="font-size: 2rem; color: white;">Some representative placeholder content for the first
+                            slide.</p>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="carousel-item" style="position: relative;">
+                    <img src="images\slideimg\laptop-slide.jpg" style="opacity: 0.8;" height="350px"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block" style="position: absolute; bottom: 0px; left:10px;">
+                        <h5 style="font-size: 3rem; color: rgb(202, 255, 8); font-weight: 700;">Get fast processor
+                        </h5>
+                        <p style="font-size: 2rem; color: rgb(255, 255, 255);"> Some representative placeholder
+                            content for the
+                            second slide.</p>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="carousel-item" style="position: relative;">
+                    <img src="images\slideimg\boat.jpg" style="opacity: 0.8;" height="350px" class="d-block w-100"
+                        alt="...">
+                    <div class="carousel-caption d-none d-md-block" style="position: absolute; left:0px;">
+                        <h5 style="font-size: 3rem; color: rgb(255, 255, 255);  font-weight: 700;">Bass boosted with
+                            boat
+                        </h5>
+                        <p style="font-size: 2rem; color: white;"> Some representative placeholder
+                            content for the
+                            second slide.</p>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" id="pre" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon pre" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" id="next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon next" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+    </section>
+
+
+
+    <!-- small slider for product -->
+
+    <!-- heading section -->
+    <section class="small-slider mx-2">
+        <div class="small-slider-heading">
+            <h4 class=" ms-2">Summer-Products</h4>
+            <button type="button" class="btn btn-success me-2">Primary</button>
+        </div>
+
+        <!-- products -->
+        <div id="carouselExampleControls" class="carousel slide" style="top: -20px;" data-bs-interval="false">
+            <div class="carousel-inner inner">
+                <div class="carousel-item active">
+                    <div class="sliders-container" style="overflow-x: visible;">
+                        <div class="first-box" style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="images\summer-products\fogg.jpeg" class="d-block w-10" alt="...">
+                            <h5 style="font-size: 15px; margin-top: 19px;"> Deodrant Spary</h5>
+                            <p style="margin: 3px; color: rgb(2, 131, 109);">Min 30% off</p>
+                            <p style="color: rgb(110, 109, 109); font-size: 14px;">Great Savings!</p>
+                        </div>
+
+                        <div class="second-box" style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="images\summer-products\footwear.jpeg" class="d-block w-10" alt="...">
+                            <h5 style="font-size: 15px; margin-top: 20px; ">Footwears</h5>
+                            <p style="margin: 3px; color: rgb(2, 131, 109);">Min 10% off</p>
+                            <p style="color: rgb(110, 109, 109); font-size: 14px;">Great Savings!</p>
+                        </div>
+
+                        <div class="third-box" style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="images\summer-products\bed.jpeg" class="d-block w-10" alt="...">
+                            <h5 style="font-size: 15px; margin-top: 39px;"> Bed covers</h5>
+                            <p style="margin: 3px; color: rgb(2, 131, 109);">Min 20% off</p>
+                            <p style="color: rgb(110, 109, 109); font-size: 14px;">Great Savings!</p>
+                        </div>
+
+                        <div class="fourth-box" style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="images\summer-products\cap.jpeg" class="d-block w-10" alt="...">
+                            <h5 style="font-size: 15px; margin-top: 59px;"> Accessories</h5>
+                            <p style="margin: 3px; color: rgb(2, 131, 109);">Min 20% off</p>
+                            <p style="color: rgb(110, 109, 109); font-size: 14px;">Great Savings!</p>
+                        </div>
+
+                        <div class="fifth-box" style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="images\summer-products\ice-cream.jpeg" class="d-block w-10" alt="...">
+                            <h5 style="font-size: 15px; margin-top: 34px;">Fridge appliance</h5>
+                            <p style="margin: 3px; color: rgb(2, 131, 109);">Min 30% off</p>
+                            <p style="color: rgb(110, 109, 109); font-size: 14px;">Great Savings!</p>
+                        </div>
+
+                        <div class="sixth-box" style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="images\summer-products\shirt.jpeg" class="d-block w-10" alt="...">
+                            <h5 style="font-size: 15px; margin-top: 19px;">Men's wear</h5>
+                            <p style="margin: 3px; color: rgb(2, 131, 109);">Min 30% off</p>
+                            <p style="color: rgb(110, 109, 109); font-size: 14px;">Great Savings!</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- sliders second parts -->
+                <div class="carousel-item">
+                    <div class="sliders-container">
+                        <div class="box-1">
+                            <img src="images\summer-products\perfume.jpeg" class="d-block w-10" alt="...">
+                            <h5 style="font-size: 15px; margin-top: 19px;">Perfumes</h5>
+                            <p style="margin: 3px; color: rgb(2, 131, 109);">Min 10% off</p>
+                            <p style="color: rgb(110, 109, 109); font-size: 14px;">Great Savings!</p>
+                        </div>
+
+                        <div class="box-2">
+                            <img src="images\summer-products\icecubs.jpeg" class="d-block w-10" alt="...">
+                            <h5 style="font-size: 15px; margin-top: 38px; ">kitchen appliances</h5>
+                            <p style="margin: 3px; color: rgb(2, 131, 109);">Min 10% off</p>
+                            <p style="color: rgb(110, 109, 109); font-size: 14px;">Great Savings!</p>
+                        </div>
+
+                        <div class="box-3">
+                            <img src="images\summer-products\slippers.jpeg" class="d-block w-10" alt="...">
+                            <h5 style="font-size: 15px; margin-top: 80px;">Slippers</h5>
+                            <p style="margin: 3px; color: rgb(2, 131, 109);">Min 13% off</p>
+                            <p style="color: rgb(110, 109, 109); font-size: 14px;">Great Savings!</p>
+                        </div>
+
+                        <div class="box-4">
+                            <img src="images\summer-products\machine.jpeg" class="d-block w-10" alt="...">
+                            <h5 style="font-size: 15px; margin-top: 23px;"> Machine tray </h5>
+                            <p style="margin: 3px; color: rgb(2, 131, 109);">Min 10% off</p>
+                            <p style="color: rgb(110, 109, 109); font-size: 14px;">Great Savings!</p>
+                        </div>
+
+                        <div class="box-5">
+                            <img src="images\summer-products\solar-lights.jpeg" class="d-block w-10" alt="...">
+                            <h5 style="font-size: 15px; margin-top: 19px;"> Juicers</h5>
+                            <p style="margin: 3px; color: rgb(2, 131, 109);">Min 18% off</p>
+                            <p style="color: rgb(110, 109, 109); font-size: 14px;">Great Savings!</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- buttons of sliders -->
+                <button class="carousel-control-prev" id="small-slider-button"
+                    style="background-color: black; opacity: 1;" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden previous">Previous</span>
+                </button>
+                <button class="carousel-control-next" id="small-slider-button"
+                    style="background-color: rgb(0, 0, 0); opacity: 1;" type="button"
+                    data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+
+                </button>
+            </div>
+
+            <!-- add -->
+            <div class="adds">
+                <a href="">
+                    <img src="images\summer-products\adds.jpg" width="191px" height="321px" alt="">
+                </a>
+            </div>
+
+    </section>
+
+
+    <!-- big-boxes -->
+
+    <section class="big-boxes" style="width: 100%; padding: 0px 17px;">
+
+        <div class="whole-container">
+            <!-- first box -->
+            <div class="big-box-1 mb-5" id="big-box-1">
+                <div class="mobile-img">
+                    <img src="images\bigboxe-img\mobile.jpg" style="border-radius: 10px;" height="150px" alt="">
+                </div>
+                <div class="g85">Most Affordable Hello G85
+                </div>
+                <div class="left-head-p">
+                    <p style="margin:0px">realme narzo 30A</p>
+                    <del><span style="font-size: 13px; color: yellow;">&#8377 9,999 </span></del>
+                    <p style="font-size:22px; color: yellow; font-weight: 600; margin-bottom: 0px;"><span>From
+                            &#8377
+                            7,999</span></p>
+                    <p style="font-size: 13px;">6000mAh | 6.51"HD+</p>
+                </div>
+            </div>
+            <!-- second box -->
+
+            <div class="big-box-1" id="big-box-2">
+
+                <div class="mobile-img">
+                    <img src="images\bigboxe-img\tv.webp" style="border-radius: 10px;" height="150px" width="250px"
+                        alt="">
+                </div>
+
+                <div class="left-head-p">
+                    <p style="margin:0px;">Most Trending TVs </p>
+                    <p style="font-size:22px; color: yellow; font-weight: 600; margin-bottom: 0px;"><span>Up to 70%
+                            Off</span></p>
+                </div>
+            </div>
+
+            <!-- third box -->
+            <div class="big-box-1" id="big-box-3">
+                <div class="mobile-img">
+                    <img src="images\bigboxe-img\mobile.jpg" style="border-radius: 10px;" height="150px" alt="">
+                </div>
+
+                <div class="g85">Flagship at Killer Price</div>
+
+                <div class="left-head-p">
+                    <p style="margin:0px">Poco X3</p>
+                    <del><span style="font-size: 13px; color: yellow;">&#8377 19,999 </span></del>
+                    <p style="font-size:22px; color: yellow; font-weight: 600; margin-bottom: 0px;"><span>From
+                            &#8377
+                            14,499</span></p>
+                    <p style="font-size: 13px;">SD 732G | 120Hz Refresh Rate</p>
+                </div>
+            </div>
+
+            <!-- fourth box -->
+            <div class="big-box-1" id="big-box-4">
+                <div class="mobile-img">
+                    <img src="images\bigboxe-img\mobile.jpg" style="border-radius: 10px;" height="150px" alt="">
+                </div>
+
+                <div class="g85">Flagship at Killer Price</div>
+
+                <div class="left-head-p">
+                    <p style="margin:0px">Poco X3</p>
+                    <del><span style="font-size: 13px; color: yellow;">&#8377 19,999 </span></del>
+                    <p style="font-size:22px; color: yellow; font-weight: 600; margin-bottom: 0px;"><span>From
+                            &#8377
+                            14,499</span></p>
+                    <p style="font-size: 13px;">SD 732G | 120Hz Refresh Rate</p>
+                </div>
+            </div>
+
+            <!-- fifth box -->
+            <div class="big-box-1" id="big-box-5">
+                <div class="mobile-img">
+                    <img src="images\bigboxe-img\mobile.jpg" style="border-radius: 10px;" height="150px" alt="">
+                </div>
+
+                <div class="g85">Flagship at Killer Price</div>
+
+                <div class="left-head-p">
+                    <p style="margin:0px">Poco X3</p>
+                    <del><span style="font-size: 13px; color: yellow;">&#8377 19,999 </span></del>
+                    <p style="font-size:22px; color: yellow; font-weight: 600; margin-bottom: 0px;"><span>From
+                            &#8377
+                            14,499</span></p>
+                    <p style="font-size: 13px;">SD 732G | 120Hz Refresh Rate</p>
+                </div>
+            </div>
+
+            <!-- sixth box -->
+            <div class="big-box-1" id="big-box-6">
+                <div class="mobile-img">
+                    <img src="images\bigboxe-img\mobile.jpg" style="border-radius: 10px;" height="150px" alt="">
+                </div>
+
+                <div class="g85">Flagship at Killer Price</div>
+
+                <div class="left-head-p">
+                    <p style="margin:0px">Poco X3</p>
+                    <del><span style="font-size: 13px; color: yellow;">&#8377 19,999 </span></del>
+                    <p style="font-size:22px; color: yellow; font-weight: 600; margin-bottom: 0px;"><span>From
+                            &#8377
+                            14,499</span></p>
+                    <p style="font-size: 13px;">SD 732G | 120Hz Refresh Rate</p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+
+</body>
+
+</html>

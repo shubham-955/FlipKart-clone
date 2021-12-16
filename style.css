@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f1f3f6;
+    overflow-x: hidden;
+}
+
+/* logo */
+.logo{
+    margin-left: 11rem;
+    margin-bottom: 0px; 
+    margin-right: 1rem;
+    height: 7vh;
+    line-height: 2.1rem;
+}
+
+.logo img{
+    width: 4.5rem;
+}
+
+/* logo caption (below logo line )*/
+.caption{
+    font-size: 0.7rem;
+    line-height: 0.1rem;
+}
+
+.caption span{
+    color: yellow;
+    font-size: bold;
+
+}
+
+/* search bar */
+
+.main-search{
+    height: 2.1rem;
+    width: 36rem;
+    position: relative;
+    border-radius: 0rem;
+    box-shadow: 0px 1px 4px rgb(97, 95, 95);
+    padding-bottom: 9px;
+    padding-right: 30px;
+}
+
+/* in search bar icon  */
+.s-icon{
+   position: absolute;
+   top: 1.4rem;
+   right: 672px;
+}
+
+/* login btn */
+.btn-1{
+    color: #2874f0;
+    font-weight: 600;
+    margin-left: 12rem;
+    margin-top: 2px;
+    width: 7.5rem;
+    line-height: 8px;
+    border-radius:0rem;
+    height: 2rem;
+}
+
+.btn-1 a{
+    text-decoration: none;
+    
+}
+
+/* cart shopping logo*/
+.cart{
+    font-weight: 700;
+}
+
+
+
+/*/////////////// 2 navbar's below section  //////////////////*/
+
+/* for whole container */
+.first-container{
+    height: 13vh;
+}
+
+/* container's all content  */
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13vh;
+}
+
+/* only for dropdown buttons */
+#dropdown{
+    display: flex;
+    flex-direction: column;
+     margin-bottom: 40px;
+    position: relative;
+}
+
+
+/* whole images-space in below navbar's section */
+.box1{
+   width: 7rem; 
+   margin: 1rem;
+}
+
+/* images */
+.box1 img{
+    width: 3.8rem;
+    height: 4.2rem;
+}
+
+/* heading below the images  */
+.box1 h5 {
+    font-size: 15px;
+    margin-left: 4px;
+    
+    
+}
+
+.box1 a h5 {
+    text-decoration: none;
+     color: black;
+     
+}
+
+.btn-group{
+  position: absolute;
+  top: 45px;
+  left: -10px;
+  margin-top: 11px;
+}
+
+.btn-group span{
+    font-size: 15px;
+    font-weight: 600;
+}
+/* end of the after navbar section */
+
+/*//////////////////// Main Slider  ////////////////////// */
+
+.main{
+    height: 45vh;
+    position: relative;
+}
+
+.carousel-item {
+    transition: transform 0.2s ease-in-out;
+}
+.main #pre{
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+    position: absolute;
+    height: 100px;
+    width: 50px;
+    top: 120px;
+}
+
+.main .pre{
+    background-color: rgb(0, 0, 0);
+    height: 30px;
+    width: 50px;
+}
+
+.main #next{
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+    position: absolute;
+    height: 100px;
+    width: 50px;
+    top: 120px;
+}
+
+
+.main .next{
+    background-color: rgb(0, 0, 0);
+    width: 40px;
+    height: 30px; 
+}
+
+/*////////////////////// small slider /////////////////////*/
+
+
+/* products */
+
+.small-slider{
+    height: 53vh;
+    width: 100%;
+    position: relative;
+}
+
+.small-slider #small-slider-button{
+    width: 2rem;
+    height: 5rem;
+    position: absolute;
+    top: 150px;
+}
+
+
+.small-slider-heading{
+    margin-top: 20px;
+    width: 85%;
+    margin-bottom: 0px;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgb(158, 156, 156);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.adds{
+    width: 211px;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    background-color: white;
+     width: 200px;
+      padding: 6px; 
+      margin: 10px;
+}
+
+
+.inner{
+    width: 85%;
+}
+
+.sliders-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+    height: 42vh;
+    background-color: rgb(255, 254, 254);
+}
+
+.first-box{
+    width: 120px;
+    margin-left: 3rem;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+.first-box:hover>img{
+    height: 153px;
+
+}
+
+.second-box{
+    width: 140px;  
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.second-box:hover>img{
+    height: 153px;
+
+}
+
+.third-box{
+    width: 160px;
+    margin-top: 10px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+.third-box:hover>img{
+    height: 120px;
+
+}
+
+.fourth-box{
+    width: 150px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+.fourth-box:hover>img{
+    height: 112px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+
+}
+
+.fifth-box{
+    width: 152px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+.fifth-box:hover>img{
+    height: 136px;
+
+}
+
+.sixth-box{
+    width: 120px;
+    margin-right: 1rem;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+.sixth-box:hover>img{
+    height: 153px;
+
+}
+
+/* second part of slider */
+
+.box-1{
+    width: 120px;
+    margin-left: 3rem;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+.box-1:hover>img{
+    height: 153px;
+}
+
+.box-2{
+    width: 140px;  
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+
+}
+
+.box-2:hover>img{
+    height: 133px;
+
+}
+
+.box-3{
+    width: 160px;
+    margin-top: 10px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+.box-3:hover>img{
+    height: 82px;
+
+}
+
+.box-4{
+    width: 150px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+.box-4:hover>img{
+    height: 154px;
+
+}
+
+.box-5{
+    width: 152px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+.box-5:hover>img{
+    height: 154px;
+
+}
+
+/*  */
+
+.whole-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+
+.big-box-1{
+    width: 462px;
+    height: 280px;
+    background: linear-gradient(rgba(53, 113, 226, 0.959),rgba(50, 125, 223, 0.579));  
+    border-radius: 10px;  
+    outline: 8px solid white;
+    position: relative;
+    /* margin-right: 2rem; */
+}
+
+/* first raw only for get margin between three boxes */
+
+#big-box-2{
+    margin:0 3rem;
+}
+
+/* second raw only for get margin between three boxes */
+#big-box-5{
+    margin: 0 3rem;
+}
+
+
+.g85{
+    background-color: rgb(241, 228, 151);
+     width: 250px;
+     text-align: center;
+     position: absolute;
+     left: 20px;
+     border-bottom-left-radius: 8px;
+     border-bottom-right-radius: 8px;
+     font-weight: bold;
+     color: rgb(80, 80, 80);
+
+}
+
+.left-head-p{
+    position: absolute;
+    top: 30%;
+    left: 20px;
+    color: white;
+    font-size: 18px;
+
+}
+
+.mobile-img{
+ position: absolute;
+ top: 25%;
+ right: 10px;
+ transition: transform 1s;
+ 
+}
+
+.mobile-img:hover{
+    transform: rotateY(180deg);
+}
+
+/*  */
